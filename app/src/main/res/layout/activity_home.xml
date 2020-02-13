@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/fundo_cinza"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Home">
+
+
+    <TextView
+        android:id="@+id/txtHomeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-Vinda,"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtHomeNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtHomeMsg"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomeChupeta"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="120dp"
+        app:cardCornerRadius="120dp"
+        app:cardBackgroundColor="#F6F6F6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/pacifier"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTempoGrav"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewHomeChupeta"
+        android:layout_marginTop="20dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        >
+
+        <TextView
+            android:text="Data estimada:  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/txtHomeData"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomePerfil"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="20dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewHomeVacinas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCardPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iconeCheck"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="top|center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="8dp"
+            android:text="Perfil"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomeVacinas"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="20dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toEndOf="@+id/cardViewHomePerfil"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewHomeChecklist"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCardVacinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iconeVacina"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="top|center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="8dp"
+            android:text="Vacinas"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomeChecklist"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="20dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toEndOf="@+id/cardViewHomeVacinas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCardCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iconeCheck"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="top|center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="8dp"
+            android:text="Checklist"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomeMedico"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="20dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintStart_toEndOf="@id/cardViewHomeEmerg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCardMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/iconeMedico"
+            android:layout_gravity="top|center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="8dp"
+            android:text="Médico"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomeEmerg"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="20dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardViewHomeMedico">
+
+    <ImageButton
+        android:id="@+id/btnCardEmerg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconeEmerg"
+        android:layout_gravity="top|center"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="8dp"
+            android:text="Emergencia"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
