@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Home">
+    tools:context=".activity.HomeActivity">
 
 
     <TextView
@@ -100,7 +100,7 @@
             android:id="@+id/btnCardPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/iconeCheck"
+            android:background="@drawable/icone_list"
             android:layout_marginTop="8dp"
             android:layout_gravity="top|center"
             />
@@ -131,7 +131,7 @@
             android:id="@+id/btnCardVacinas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/iconeVacina"
+            android:background="@drawable/icone_vacina"
             android:layout_marginTop="8dp"
             android:layout_gravity="top|center"
             />
@@ -161,7 +161,7 @@
             android:id="@+id/btnCardCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/iconeCheck"
+            android:background="@drawable/icone_list"
             android:layout_marginTop="8dp"
             android:layout_gravity="top|center"
             />
@@ -192,7 +192,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/iconeMedico"
+            android:background="@drawable/icone_medico"
             android:layout_gravity="top|center"
             />
 
@@ -221,7 +221,7 @@
         android:id="@+id/btnCardEmerg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/iconeEmerg"
+        android:background="@drawable/icone_emerg"
         android:layout_gravity="top|center"
         />
 
