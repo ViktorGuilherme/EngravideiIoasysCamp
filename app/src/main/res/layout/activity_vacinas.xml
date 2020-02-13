@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_cinza"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/txtCard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recomendadas"
+            android:textColor="#82B1FF"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toTopOf="@id/cardView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCard1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Influenza (gripe)"
+                    android:textColor="@color/colorText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:theme="@style/checkboxColored" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:text="Hepatite B"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:text="H3 Tríplice bacteriana"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtCard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recomendadas em situações especiais"
+            android:textColor="#82B1FF"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toTopOf="@id/cardView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView3" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCard2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hepatite A"
+                    android:textColor="@color/colorText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pneumocócicas"
+                    android:textColor="@color/colorText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meningocócica conjugada ACWY"
+                    android:textColor="@color/colorText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meningocócica B"
+                    android:textColor="@color/colorText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="345dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Febre amarela"
+                    android:textColor="@color/colorText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:text="Gratuita: sim"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="56dp"
+                    android:textColor="#B9CCED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_marginStart="301dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

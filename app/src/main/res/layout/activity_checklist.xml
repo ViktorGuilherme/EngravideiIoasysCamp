@@ -1,0 +1,330 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorFundoCinza"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <TextView
+                android:text="@string/_1_trimestre"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Hemograma"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Tipagem sanguínea e fator Rh"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Coombs indireto (se for Rh negativo)"
+            android:textSize="16sp"
+             />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:text="Glicemia em jejum"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:text="Teste rápido de triagem para sífilis
+ e/ou VDRL"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Teste rápido para HIV"
+            android:textSize="16sp"
+             />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Toxoplasmose IgM e IgG    "
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Sorologia para hepatite B"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Urocultura + sumário de urina"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Ultrassonografia (exame morfológico)"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Exame citopatológico de colo de útero
+                 (se houver indicação clínica)"
+            android:textSize="16sp"
+             />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Exame da secreção vaginal
+                                      (se houverindicação clínica)"
+            android:textSize="16sp"
+             />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Exame parasitológico de fezes
+                                 (se houver indicação clínica)"
+            android:textSize="16sp"
+             />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <TextView
+                android:text="2°TRIMESTRE"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Teste de tolerância para glicose, se a glicemia
+estiver acima de 85mg/dl ou se houver fator
+de risco para diabetes. Ele deve ser realizado
+preferencialmente entre a 24ª e a 28ª semana."
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Coombs indireto (se for Rh negativo)"
+            android:textSize="16sp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            >
+
+            <TextView
+                android:text="3°TRIMESTRE"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Hemograma e fator Rh Coombs indireto
+                        (se for Rh negativo)"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Glicemia em jejum"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Teste rápido de triagem para sífilis e/ou
+ VDRL"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Teste rápido para HIV"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Sorologia para hepatite B"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Toxoplasmose IgM e IgG (se IgG negativo
+ na primeira consulta)"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkChlist22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkboxColored"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Urocultura + sumário de urina"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
