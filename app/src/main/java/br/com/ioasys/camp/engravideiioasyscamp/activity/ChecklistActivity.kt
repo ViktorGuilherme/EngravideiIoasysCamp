@@ -1,39 +1,23 @@
-
 package br.com.ioasys.camp.engravideiioasyscamp.activity
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.ioasys.camp.engravideiioasyscamp.R
-import kotlinx.android.synthetic.main.activity_inicio.*
 
-class LoginActivity : AppCompatActivity() {
+class ChecklistActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_checklist)
 
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "Login"
+        supportActionBar?.title = "Checklist"
     }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
-    }
-
-    override fun onStart() {
-        super.onStart()
-
-        buttonLogin.setOnClickListener{
-            val intent = Intent(
-                this,
-                HomeActivity::class.java)
-
-            startActivity(intent)
-        }
-
     }
 }

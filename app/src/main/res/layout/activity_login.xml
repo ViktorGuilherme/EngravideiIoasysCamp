@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/campoEmail"/>
 
     <Button
-        android:id="@+id/buttonCadastro"
+        android:id="@+id/buttonLogin"
         android:layout_width="335dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -66,9 +66,8 @@
         android:textColor="#4D82CB"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         android:layout_marginBottom="150dp"
-        app:layout_constraintTop_toBottomOf="@id/buttonCadastro"/>
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"/>
 
     <TextView
         android:id="@+id/txtOu"
@@ -79,9 +78,9 @@
         android:text="OU"
         android:textSize="20dp"
         android:textColor="@color/colorHint"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoginGoogle"
         android:layout_marginBottom="150dp"
         app:layout_constraintTop_toBottomOf="@id/txtEsqueceuSenha"/>
 

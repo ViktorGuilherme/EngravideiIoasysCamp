@@ -12,12 +12,15 @@
         android:orientation="vertical"
         >
 
+        <include layout="@layout/toolbar" />
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/colorAccent"
             app:cardCornerRadius="35dp"
-            app:cardElevation="@dimen/cardview_default_elevation">
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
             <TextView
                 android:text="@string/_1_trimestre"
@@ -63,7 +66,7 @@
             android:padding="10dp"
             android:text="Coombs indireto (se for Rh negativo)"
             android:textSize="16sp"
-             />
+            />
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/checkChlist4"
@@ -97,7 +100,7 @@
             android:padding="10dp"
             android:text="Teste rápido para HIV"
             android:textSize="16sp"
-             />
+            />
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/checkChlist7"
@@ -153,7 +156,7 @@
             android:text="Exame citopatológico de colo de útero
                  (se houver indicação clínica)"
             android:textSize="16sp"
-             />
+            />
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/checkChlist12"
@@ -165,7 +168,7 @@
             android:text="Exame da secreção vaginal
                                       (se houverindicação clínica)"
             android:textSize="16sp"
-             />
+            />
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/checkChlist13"
@@ -177,7 +180,7 @@
             android:text="Exame parasitológico de fezes
                                  (se houver indicação clínica)"
             android:textSize="16sp"
-             />
+            />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
