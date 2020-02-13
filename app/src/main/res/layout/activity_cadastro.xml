@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_cinza"
+    tools:context=".activity.CadastroActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/campoNome"
+        android:inputType="textPersonName"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="Nome"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"/>
+
+    <EditText
+        android:id="@+id/campoDataNascimento"
+        android:inputType="date"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="Data Nascimento"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNome"/>
+
+    <EditText
+        android:id="@+id/campoEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoDataNascimento"/>
+
+    <EditText
+        android:id="@+id/campoParto"
+        android:inputType="date"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="Data da previsão do parto"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoEmail"/>
+
+    <EditText
+        android:id="@+id/campoSenha"
+        android:inputType="textPassword"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="Senha"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoParto"/>
+
+    <EditText
+        android:id="@+id/campoConfirmeSenha"
+        android:inputType="textPassword"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="Confirme sua senha"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoSenha"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkboxTermoUso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="Aceito os termos de uso"
+        android:textSize="14sp"
+        android:textColor="#4D82CB"
+        android:theme="@style/checkboxColored"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/campoConfirmeSenha" />
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/fundo_botao_cadastro"
+        android:text="Cadastrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxTermoUso" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

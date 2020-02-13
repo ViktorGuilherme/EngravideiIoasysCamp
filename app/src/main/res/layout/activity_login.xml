@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_cinza"
+    tools:context=".activity.LoginActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/campoEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="E-mail"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"/>
+
+    <EditText
+        android:id="@+id/campoSenha"
+        android:inputType="textPassword"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fundo_caixa_texto"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:hint="Senha"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoEmail"/>
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/fundo_botao_cadastro"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoSenha" />
+
+    <TextView
+        android:id="@+id/txtEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="43dp"
+        android:text="Esqueceu a senha?"
+        android:textSize="14sp"
+        android:textColor="#4D82CB"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonCadastro"/>
+
+    <TextView
+        android:id="@+id/txtOu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="43dp"
+        android:text="OU"
+        android:textSize="20dp"
+        android:textColor="@color/colorHint"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintTop_toBottomOf="@id/txtEsqueceuSenha"/>
+
+    <Button
+        android:id="@+id/buttonLoginGoogle"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:text="FAÇA LOGIN COM O GOOGLE"
+        android:drawablePadding="-45dp"
+        android:textColor="@color/colorHint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/fundo_botao_google"
+        android:drawableLeft="@drawable/google"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOu" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
