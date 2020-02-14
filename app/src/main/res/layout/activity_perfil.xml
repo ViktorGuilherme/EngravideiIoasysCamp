@@ -1,142 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+
+<ScrollView
     android:layout_height="match_parent"
-    android:background="@drawable/fundo_cinza"
-    tools:context=".activity.PerfilActivity">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <include layout="@layout/toolbar" />
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo_cinza"
+        tools:context=".activity.PerfilActivity">
 
-    <TextView
-        android:id="@+id/txtCampoNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nome:"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:textSize="25sp"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"/>
+        <include layout="@layout/toolbar" />
 
-    <TextView
-        android:id="@+id/campoNome"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
-        android:background="@drawable/fundo_caixa_texto"
-        android:textColorHint="@color/colorHint"
-        android:hint="Renata Alves"
-        android:textSize="25dp"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCampoNome"/>
+        <TextView
+            android:id="@+id/txtCampoNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"/>
 
-    <TextView
-        android:id="@+id/txtCampoDataNascimento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de Nascimento:"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:textSize="25sp"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoNome"/>
+        <TextView
+            android:id="@+id/campoNome"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:textColorHint="@color/colorHint"
+            android:hint="Renata Alves"
+            android:textSize="25dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCampoNome"/>
 
-    <TextView
-        android:id="@+id/campoDataNascimento"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
-        android:background="@drawable/fundo_caixa_texto"
-        android:textColorHint="@color/colorHint"
-        android:hint="11/04/1994"
-        android:textSize="25dp"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCampoDataNascimento"/>
+        <TextView
+            android:id="@+id/txtCampoDataNascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de Nascimento:"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoNome"/>
 
-    <TextView
-        android:id="@+id/txtCampoEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="E-mail:"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:textSize="25sp"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoDataNascimento"/>
+        <TextView
+            android:id="@+id/campoDataNascimento"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:textColorHint="@color/colorHint"
+            android:hint="11/04/1994"
+            android:textSize="25dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCampoDataNascimento"/>
 
-    <TextView
-        android:id="@+id/campoEmail"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
-        android:background="@drawable/fundo_caixa_texto"
-        android:textColorHint="@color/colorHint"
-        android:hint="example@example.com"
-        android:textSize="25dp"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCampoEmail"/>
+        <TextView
+            android:id="@+id/txtCampoEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail:"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoDataNascimento"/>
 
-    <TextView
-        android:id="@+id/txtCampoSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Senha:"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:textSize="25sp"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoEmail"/>
+        <TextView
+            android:id="@+id/campoEmail"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:textColorHint="@color/colorHint"
+            android:hint="example@example.com"
+            android:textSize="25dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCampoEmail"/>
 
-    <TextView
-        android:id="@+id/campoSenha"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
-        android:background="@drawable/fundo_caixa_texto"
-        android:textColorHint="@color/colorHint"
-        android:hint="******"
-        android:textSize="25dp"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCampoSenha"/>
+        <TextView
+            android:id="@+id/txtCampoSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha:"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoEmail"/>
 
-    <TextView
-        android:id="@+id/txtCampoParto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data do Parto:"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:textSize="25sp"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoSenha"/>
+        <TextView
+            android:id="@+id/campoSenha"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:textColorHint="@color/colorHint"
+            android:hint="******"
+            android:textSize="25dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCampoSenha"/>
 
-    <TextView
-        android:id="@+id/campoParto"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
-        android:background="@drawable/fundo_caixa_texto"
-        android:textColorHint="@color/colorHint"
-        android:hint="11/12/2020"
-        android:textSize="25dp"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCampoParto"/>
+        <TextView
+            android:id="@+id/txtCampoParto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data do Parto:"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoSenha"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/campoParto"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fundo_caixa_texto"
+            android:textColorHint="@color/colorHint"
+            android:hint="11/12/2020"
+            android:textSize="25dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCampoParto"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
