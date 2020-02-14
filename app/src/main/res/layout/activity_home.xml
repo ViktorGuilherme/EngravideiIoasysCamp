@@ -100,7 +100,7 @@
             android:id="@+id/btnCardPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/icone_list"
+            android:background="@drawable/icone_perfil"
             android:layout_marginTop="8dp"
             android:layout_gravity="top|center"
             />
@@ -217,13 +217,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/cardViewHomeMedico">
 
-    <ImageButton
-        android:id="@+id/btnCardEmerg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/icone_emerg"
-        android:layout_gravity="top|center"
-        />
+        <ImageButton
+            android:id="@+id/btnCardEmerg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icone_emerg"
+            android:layout_gravity="top|center"
+            />
 
         <TextView
             android:layout_width="wrap_content"

@@ -1,5 +1,6 @@
 package br.com.ioasys.camp.engravideiioasyscamp.activity
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,6 +18,13 @@ class HomeActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
+        val prefs = getSharedPreferences("REGIST", Context.MODE_PRIVATE)
+        val nome = prefs.getString("NOME", "")
+        val data = prefs.getString("DATAPARTO","")
+
+        txtHomeNome.text = nome
+        txtHomeData.text = data
+
         btnCardVacinas.setOnClickListener{
             val intent = Intent(
                 this,
@@ -29,6 +37,14 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(
                 this,
                 ChecklistActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        btnCardPerfil.setOnClickListener{
+            val intent = Intent(
+                this,
+                PerfilActivity::class.java)
 
             startActivity(intent)
         }
