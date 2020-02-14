@@ -10,7 +10,7 @@ class ViewModelRegistro {
 
     fun registerUser(novoRegistro: UserRegister): Boolean{
 
-        var boleanoDeRegistro: Boolean = false
+        var boleanoDeRegistro: Boolean = true
 
         Service.retrofit.registerUserApp(novoRegistro)
             .enqueue(object: Callback<RegisterResponse> {
