@@ -13,6 +13,20 @@ class PerfilActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil)
 
+        setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.setHomeButtonEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Perfil"
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
+    override fun onStart() {
+        super.onStart()
+
         val prefs = getSharedPreferences("REGIST", Context.MODE_PRIVATE)
         val nome = prefs.getString("NOME", "")
         val email = prefs.getString("EMAIL", "")
@@ -25,14 +39,5 @@ class PerfilActivity : AppCompatActivity() {
         campoParto.text = dataParto
         campoEmail.text = email
 
-        setSupportActionBar(findViewById(R.id.toolbar))
-        supportActionBar?.setHomeButtonEnabled(true)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "Perfil"
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
     }
 }
