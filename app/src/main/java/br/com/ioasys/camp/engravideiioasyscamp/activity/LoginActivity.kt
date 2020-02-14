@@ -28,11 +28,20 @@ class LoginActivity : AppCompatActivity() {
         super.onStart()
 
         buttonLogin.setOnClickListener{
-            val intent = Intent(
-                this,
-                HomeActivity::class.java)
 
-            startActivity(intent)
+            val vmlogin = ViewModelLogin()
+
+            if (vmlogin.getLogin()){
+                val intent = Intent(
+                    this,
+                    HomeActivity::class.java)
+
+                startActivity(intent)
+            }
+            else{
+                //Colocar balão de erro
+            }
+
         }
 
     }

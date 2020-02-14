@@ -4,9 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.ioasys.camp.engravideiioasyscamp.R
+import br.com.ioasys.camp.engravideiioasyscamp.viewmodel.UserRegister
+import br.com.ioasys.camp.engravideiioasyscamp.viewmodel.ViewModelRegistro
 import kotlinx.android.synthetic.main.activity_cadastro.*
-import kotlinx.android.synthetic.main.activity_inicio.*
 import kotlinx.android.synthetic.main.activity_inicio.buttonCadastro
+
 
 class CadastroActivity : AppCompatActivity() {
 
@@ -29,12 +31,29 @@ class CadastroActivity : AppCompatActivity() {
         super.onStart()
 
         buttonCadastro.setOnClickListener{
-            val intent = Intent(
-                this,
-                HomeActivity::class.java)
 
-            startActivity(intent)
+            val registroUsuario = UserRegister(
+                campoEmail.text.toString(),
+                campoSenha.text.toString(),
+                campoDataNascimento.text.toString(),
+                campoNome.text.toString(),
+                campoParto.text.toString()
+            )
+            val registroModel = ViewModelRegistro()
+            val proxTela:Boolean = registroModel.registerUser(registroUsuario)
+
+            if (proxTela){
+                val intent = Intent(
+                    this,
+                    HomeActivity::class.java)
+
+                startActivity(intent)
+            }
+            else{
+
+            }
+
+            }
         }
-
     }
-}
+
