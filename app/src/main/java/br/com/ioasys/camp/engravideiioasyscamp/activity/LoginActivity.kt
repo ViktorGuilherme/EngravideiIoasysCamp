@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.ioasys.camp.engravideiioasyscamp.R
+import br.com.ioasys.camp.engravideiioasyscamp.viewmodel.ViewModelLogin
 import kotlinx.android.synthetic.main.activity_inicio.*
 
 class LoginActivity : AppCompatActivity() {
