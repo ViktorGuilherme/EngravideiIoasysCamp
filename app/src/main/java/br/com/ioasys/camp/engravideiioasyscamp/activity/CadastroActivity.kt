@@ -45,7 +45,7 @@ class CadastroActivity : AppCompatActivity() {
             if (proxTela){
                 val intent = Intent(
                     this,
-                    HomeActivity::class.java)
+                    LoginActivity::class.java)
 
                 startActivity(intent)
             }

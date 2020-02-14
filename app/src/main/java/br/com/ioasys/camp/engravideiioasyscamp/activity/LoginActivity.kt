@@ -40,7 +40,6 @@ class LoginActivity : AppCompatActivity() {
                 this,
                 HomeActivity::class.java)
 
-            startActivity(intent)
             getLogin(intent)
         }
 
