@@ -49,5 +49,21 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnCardEmerg.setOnClickListener{
+            val intent = Intent(
+                this,
+                ManutencaoActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        btnCardMedico.setOnClickListener{
+            val intent = Intent(
+                this,
+                ManutencaoActivity::class.java)
+
+            startActivity(intent)
+        }
+
     }
 }
